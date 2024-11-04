@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germanistan Loader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <style>
+        /* Reset margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-screen background image */
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            background: url('https://github.com/lgermanistanl/material/blob/main/b9f591592fb808fa29fe4581add00512.jpg?raw=true') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center clickable text */
+        .center-text {
+            font-family: Pinyon Script, cursive;
+            font-size: 4em;
+            aligm: center;
+            color: #ffffff;
+            cursor: pointer;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            transition: text-shadow 0.3s ease;
+        }
+
+        /* Text glow effect on hover */
+        .center-text:hover {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        }
+
+        /* Top-left logo container */
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* Rotating 3D logo */
+        .logo {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1/1;
+            background: transparent;
+            animation: rotate3D 5s infinite linear;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 3D rotation animation */
+        @keyframes rotate3D {
+            from {
+                transform: rotate3d(1, 1, 0, 0deg);
+            }
+            to {
+                transform: rotate3d(1, 1, 0, 360deg);
+            }
+        }
+
+        /* Placeholder text below logo */
+        .logo-text {
+            color: #ffffff;
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo with text below -->
+    <div class="logo-container" onclick="window.location.href='https://dein-link-zum-shop.com'">
+        <img src="https://raw.githubusercontent.com/lgermanistanl/material/refs/heads/main/germanistanlogo.png" alt="Logo" class="logo">
+        <div class="logo-text">To The Shop €€€</div>
+    </div>
+
+    <!-- Centered clickable text -->
+    <div class="center-text" onclick="handleCenterTextClick()">Es war einmal vor einer lange Zeit in  Germanistan</div>
+
+    <script>
+        function handleCenterTextClick() {
+            // Action for clicking the center text
+            window.location.href = 'https://raw.githubusercontent.com/lgermanistanl/material/refs/heads/main/germanistanlogo.png';
+        }
+    </script>
+
+</body>
+</html>
